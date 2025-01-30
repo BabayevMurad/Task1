@@ -1,0 +1,25 @@
+﻿@model ProductListViewModel
+
+<section>
+    <h1>Delete</h1>
+
+    @if (Model.Products != null){
+
+        @foreach (var item in Model.Products)
+        {
+            <h2>Id: @item.Id</h2>
+            <h2>Name: @item.Name</h2>
+            <h2>Description: @item.Description</h2>
+            <h2>Price: @item.Price</h2>
+            <h2>Discount: @item.Discount</h2>
+            <img src="@item."ImagePath" />
+
+            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+        }
+
+        <a href="/home/add">Add</a>
+
+    }
+
+</section>

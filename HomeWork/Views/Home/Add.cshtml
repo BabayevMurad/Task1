@@ -1,0 +1,26 @@
+﻿@model ProductViewModel
+
+<section>
+    <form asp-controller="" asp-action="AddElement" method="post">
+        <section>
+            <label asp-for="Name"></label>
+            <input asp-for="Name" />
+        </section>
+        <section>
+            <label asp-for="Description"></label>
+            <input asp-for="Description" />
+        </section>
+        <section>
+            <label asp-for="Discount"></label>
+            <input asp-for="Discount" />
+        </section>
+        <section>
+            <label asp-for="Price"></label>
+            <input asp-for="Price" />
+        </section>
+        <section>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </section>
+    </form>
+
+</section>
