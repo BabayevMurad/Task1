@@ -11,6 +11,6 @@
 
         public int Discount { get; set; }
 
-        public string ImagePath { get; set; }
+        public string ImagePath { get; set; } = "sa";
     }
 }

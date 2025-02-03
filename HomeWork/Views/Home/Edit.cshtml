@@ -1,7 +1,11 @@
 ﻿@model ProductViewModel
 
 <section>
-    <form asp-controller="" asp-action="Add">
+    <form asp-controller="Home" asp-action="Edit">
+        <section>
+            <label asp-for="Id"></label>
+            <input asp-for="Id" style="background-color: darkgray" readonly />
+        </section>
         <section>
             <label asp-for="Name"></label>
             <input asp-for="Name" />
@@ -11,12 +15,12 @@
             <input asp-for="Description" />
         </section>
         <section>
-            <label asp-for="Discount"></label>
-            <input asp-for="Discount" />
-        </section>
-        <section>
             <label asp-for="Price"></label>
             <input asp-for="Price" />
+        </section>
+        <section>
+            <label asp-for="Discount"></label>
+            <input asp-for="Discount" />
         </section>
         <section>
             <button class="btn btn-primary" type="submit">Submit</button>
